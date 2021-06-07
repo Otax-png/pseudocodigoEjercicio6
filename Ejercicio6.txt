@@ -1,0 +1,30 @@
+Algoritmo Algoritmo6
+
+	Definir personas, contadorMenores, menores25, contadorMayores25, mayores25 como Entero
+	personas = 100
+	contadorMenores25 = 0
+	menores25 = 0
+	contadorMayores25 = 0
+	mayores25 = 0
+	Para i <- 1 Hasta personas Hacer
+		Mostrar "Ingrese la edad"
+		leer edad
+		
+		si edad < 25 Entonces
+			contadorMenores25 = contadorMenores25 + 1
+			menores25 = menores25 + edad
+			
+		SiNo
+			si edad >= 25 Entonces
+				contadorMayores25 = contadorMayores25 + 1
+				mayores25 = mayores25 + edad
+			FinSi
+		FinSi
+		
+	FinPara
+	promediomenores = menores25/contadorMenores25
+	promediomayores = mayores25/contadorMayores25
+	
+	Escribir "El promedio de edades para menores de 25 años es de ",promediomenores
+	Escribir "El promedio de edades para mayores de 25 años es de ",promediomayores
+FinAlgoritmo
